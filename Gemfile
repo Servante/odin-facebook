@@ -56,6 +56,7 @@ group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem 'rspec-rails', '~> 6.0', '>= 6.0.1'
+  gem 'guard-rspec', '~> 4.7', '>= 4.7.3', require: false
 end
 
 group :development do
@@ -63,7 +64,6 @@ group :development do
   gem "web-console"
   gem 'pry-rails', '~> 0.3.9'
   gem 'pry-doc', '~> 1.4'
-  gem 'guard', '~> 2.18'
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
